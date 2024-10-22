@@ -84,11 +84,69 @@ bonus_recebido = 1000 + salario * bonus  # Exemplo simples de KPI
 print(f"{nome}, seu salário é R${salario:.2f} e seu bônus final é R${bonus_recebido:.2f}.")
 ```
 
-## 2. Listas e Dicionários
+## ESTRUTURA DE DADOS
 
-### Importância na Engenharia de Dados
+### 2. Listas e Dicionários
 
 Listas e dicionários são estruturas de dados versáteis que permitem armazenar e manipular coleções de dados de forma eficiente. Na engenharia de dados, essas estruturas são fundamentais para organizar dados coletados de diversas fontes, facilitando operações como filtragem, busca, agregação e transformação de dados.
+
+ ### Listas (list)
+
+   * Definição: Uma lista é uma coleção ordenada e mutável (podemos modificar os valores).
+   
+   * Sintaxe: As listas são criadas usando colchetes [ ], e os itens são separados por vírgulas.
+   
+   * Características:
+       * Os elementos têm uma ordem, o que significa que cada item tem uma posição (índice).
+        
+        *  As listas podem armazenar itens de diferentes tipos, como números, strings e até outras listas.
+        
+        * São mutáveis, ou seja, podemos adicionar, remover ou modificar seus elementos depois de criadas.
+    
+### Exemplo
+
+```python
+    lista: list = [1,"eu",?]
+    lista[1] = "linguagem" 
+```
+### Tuplas (tuple)
+
+   * Definição: Uma tupla também é uma coleção ordenada, mas é imutável, ou seja, seus valores não podem ser alterados após a criação.
+   
+   * Sintaxe: As tuplas são criadas usando parênteses (), com os itens separados por vírgulas.
+   
+   * Características:
+       * Assim como as listas, os itens em uma tupla têm uma ordem e podem ser de tipos diferentes.
+        
+        *  Como as tuplas são imutáveis, elas são usadas quando não queremos que os dados sejam alterados.
+        
+### Exemplo
+
+```python
+    tupla_exemplo = (1, "Imutável", 5.5)
+# Não podemos alterar a tupla
+# tupla_exemplo[0] = 2  erro
+```
+### Dicionários (dict)
+
+   * Definição: Um dicionário é uma coleção de pares chave-valor, onde cada chave está associada a um valor específico.
+
+   * Sintaxe: Os dicionários são criados usando chaves {}, com cada chave associada a um valor usando dois-pontos :. Os pares chave-valor são separados por vírgulas.
+   
+   * Características:
+       * Não são ordenados até Python 3.7 (a partir de Python 3.7, eles preservam a ordem de inserção).
+        
+        *  As chaves devem ser únicas e imutáveis (por exemplo, strings, números), enquanto os valores podem ser de qualquer tipo.
+        
+        * São muito úteis quando precisamos associar um valor específico a uma chave de busca.
+    
+### Exemplo
+
+```python
+    dicionario: dict = {"nome": "Antonio", "idade": 68, "altura": 1.72}
+    print(dicionario["nome"])
+    #saída:Antonio
+```
 
 ### Exercícios de Listas e Dicionários
 
